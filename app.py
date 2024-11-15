@@ -12,7 +12,7 @@ st.set_page_config(
 )
 
 # Title
-st.title("Sistema de monitoreo de alerta temprana automática para plagas en cultivos de Tiraque")
+st.markdown("<h1 style='text-align: center; color: white;'>Sistema de monitoreo de alerta temprana automática para polilla de papa en cultivos de papa en Tiraque</h1>", unsafe_allow_html=True)
 
 
 # Function to fetch data
