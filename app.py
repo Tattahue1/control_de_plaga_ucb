@@ -77,7 +77,7 @@ if data:
         humidity = latest['hum']
         st.markdown("""
             <div class="metric-container">
-                <div class="metric-label">Humedad</div>
+                <div class="metric-label">Humedad Relativa</div>
                 <div class="metric-value">💧 {}%</div>
             </div>
         """.format(humidity), unsafe_allow_html=True)
@@ -86,7 +86,7 @@ if data:
         st.markdown("""
             <div class="metric-container">
                 <div class="metric-label">Presión</div>
-                <div class="metric-value">🔽 {} hPa</div>
+                <div class="metric-value">🔽 {} mmHg</div>
             </div>
         """.format(latest['pres']), unsafe_allow_html=True)
 
@@ -143,7 +143,7 @@ if data:
 
         # Update layout
         fig.update_layout(
-            title="Normalized Temperature, Humidity, and Pressure Trends",
+            title="Registro de Temperatura, Humedad y Presión",
             plot_bgcolor="#1F2A40",
             paper_bgcolor="#1F2A40",
             font=dict(color="#e0e0e0"),
@@ -165,7 +165,7 @@ if data:
             <div style="background-color: #1F2A40; padding: 20px; border-radius: 10px;">
                 <p style="color: #e0e0e0;">La temperatura actual es {}°C.</p>
                 <p style="color: #e0e0e0;">La humedad actual es {}%.</p>
-                <p style="color: #e0e0e0;">La presión atmosférica es {} hPa.</p>
+                <p style="color: #e0e0e0;">La presión atmosférica es {} mmHg.</p>
             </div>
         """.format(latest['temp'], latest['hum'], latest['pres']), unsafe_allow_html=True)
 
@@ -195,7 +195,7 @@ if data:
         # Assuming latest values are available
         temperature = latest['temp']  # Example: 25°C
         humidity = latest['hum']  # Example: 60%
-        pressure = latest['pres']  # Example: 1013 hPa
+        pressure = latest['pres']  # Example: 1013 mmHg
 
         # Random coefficients for demonstration
         alpha = 0.01
@@ -218,7 +218,7 @@ if data:
         # Assuming latest values are available
         temperature = latest['temp']  # Example: 25°C
         humidity = latest['hum']  # Example: 60%
-        pressure = latest['pres']  # Example: 1013 hPa
+        pressure = latest['pres']  # Example: 1013
 
         # Random coefficients for demonstration
         a = 0.4
